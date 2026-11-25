@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI widget: Chính sách quyền riêng tư</title>
+<style>
+  :root { --bg: #ffffff; --ink: #1c1c1e; --dim: #5b5b60; --line: #e3e3e8; --accent: #1f6feb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111113; --ink: #ececf0; --dim: #a3a3ab; --line: #2c2c31; --accent: #6ea8ff; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, li { color: var(--ink); }
+  .meta { color: var(--dim); margin: 0 0 24px; }
+  nav { display: flex; gap: 16px; margin: 0 0 24px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#vi">Tiếng Việt</a><a href="#en">English</a></nav>
+
+<section id="vi" lang="vi">
+<h1>Chính sách quyền riêng tư của AI widget</h1>
+<p class="meta">Ứng dụng: AI widget (com.widget.gnavi) trên Google Play · Có hiệu lực từ 25/11/2026</p>
+
+<p>AI widget là ứng dụng widget cho màn hình chính. Ứng dụng không có tài khoản, không có quảng cáo,
+không dùng công cụ phân tích hay theo dõi, và không bán dữ liệu của bạn. Hầu hết dữ liệu chỉ nằm trên điện
+thoại của bạn. Trang này nói rõ ứng dụng đọc gì, gửi gì ra ngoài, và vì sao.</p>
+
+<h2>Dữ liệu được gửi ra khỏi điện thoại</h2>
+<h3>Vị trí gần đúng (cho thời tiết)</h3>
+<p>Khi bạn dùng widget thời tiết với vị trí hiện tại, ứng dụng xin quyền vị trí gần đúng. Toạ độ được làm
+tròn đến 2 chữ số thập phân (khoảng 1 km) rồi gửi qua HTTPS tới Open-Meteo (open-meteo.com) để lấy dự
+báo. Khi bạn tìm thành phố theo tên, tên đó được gửi tới dịch vụ tìm địa điểm của Open-Meteo. Chúng tôi
+không lưu vị trí của bạn trên máy chủ nào. Quyền này là tuỳ chọn: bạn có thể chọn thành phố bằng tay.</p>
+
+<h3>Kho theme</h3>
+<p>Khi bạn mở kho theme hoặc tải một mẫu, ứng dụng tải danh sách và gói theme từ máy chủ của chúng tôi. Yêu
+cầu không kèm thông tin cá nhân. Như mọi máy chủ web, máy chủ có thể ghi lại địa chỉ IP, thời điểm và tệp
+được tải, chỉ để chống lạm dụng, và không giữ quá 30 ngày.</p>
+
+<h3>Giá vàng, giá xăng dầu, kết quả xổ số</h3>
+<p>Các widget này tải trang công khai từ webgia.com và xskt.com.vn. Ứng dụng không gửi thông tin cá nhân nào.
+Các trang đó chỉ thấy địa chỉ IP như với mọi lượt truy cập web.</p>
+
+<h2>Dữ liệu chỉ đọc trên điện thoại, không gửi đi</h2>
+<ul>
+  <li><b>Lịch</b> (khi bạn cho phép): sự kiện sắp tới, để hiện trên widget lịch.</li>
+  <li><b>Số bước chân</b> (Health Connect và quyền hoạt động thể chất, khi bạn cho phép): để hiện trên widget
+    bước chân, kể cả khi ứng dụng đang đóng.</li>
+  <li><b>Nhạc đang phát</b> (khi bạn bật quyền truy cập thông báo): ứng dụng chỉ xem phiên phát nhạc (tên bài,
+    ảnh bìa, đang phát hay dừng) để hiện và điều khiển nhạc trên widget. Ứng dụng không đọc nội dung thông báo.</li>
+  <li><b>Ảnh bạn chọn</b>: ảnh chọn qua trình chọn ảnh của hệ thống được chép vào bộ nhớ riêng của ứng dụng,
+    chỉ để làm nền widget.</li>
+  <li><b>Hình nền</b>: khi bạn yêu cầu, ứng dụng đặt ảnh làm hình nền. Nếu bạn cho phép truy cập tệp (tuỳ
+    chọn), ứng dụng đọc hình nền hiện tại chỉ để vẽ lớp kính của widget.</li>
+  <li><b>Pin, ngày giờ, lịch âm</b>: tính ngay trên máy.</li>
+  <li><b>Những gì bạn nhập</b> (ghi chú, tên, ngày đếm ngược, nội dung mã QR): lưu trên máy.</li>
+</ul>
+
+<h2>Health Connect</h2>
+<p>Ứng dụng chỉ đọc số bước chân từ Health Connect và không ghi gì vào đó. Dữ liệu này chỉ dùng để hiện trên
+widget của bạn. Nó không được gửi đi, không dùng cho quảng cáo, và không chia sẻ cho ai. Việc dùng thông tin
+nhận từ Health Connect tuân theo Chính sách về quyền của Health Connect, bao gồm các yêu cầu về Sử dụng hạn chế.</p>
+
+<h2>Lưu giữ và xoá dữ liệu</h2>
+<p>Dữ liệu của bạn nằm trong bộ nhớ riêng của ứng dụng trên điện thoại. Gói theme đã tải được mã hoá trên máy.
+Bạn xoá được tất cả bằng cách xoá dữ liệu ứng dụng trong Cài đặt, hoặc gỡ ứng dụng. Bạn có thể thu hồi từng
+quyền bất cứ lúc nào trong Cài đặt của Android.</p>
+
+<h2>Bảo mật</h2>
+<p>Ứng dụng kết nối qua HTTPS. Danh sách theme được ký số, và ứng dụng từ chối danh sách bị sửa.</p>
+
+<h2>Trẻ em</h2>
+<p>Ứng dụng không dành cho trẻ dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em.</p>
+
+<h2>Thay đổi</h2>
+<p>Nếu ứng dụng bắt đầu dùng dữ liệu theo cách khác (ví dụ thêm quảng cáo hoặc mua trong ứng dụng), trang này
+sẽ được cập nhật trước, kèm ngày hiệu lực mới.</p>
+
+<h2>Liên hệ</h2>
+<p>Email: <a href="mailto:support@gnavigation.men">support@gnavigation.men</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>AI widget privacy policy</h1>
+<p class="meta">App: AI widget (com.widget.gnavi) on Google Play · Effective 25 November 2026</p>
+
+<p>AI widget is a home screen widget app. It has no accounts, no ads, no analytics or tracking tools, and it
+does not sell your data. Most data stays on your phone. This page explains what the app reads, what it sends,
+and why.</p>
+
+<h2>Data that leaves your phone</h2>
+<h3>Approximate location (for weather)</h3>
+<p>When you use a weather widget with your current location, the app asks for approximate location. The
+coordinates are rounded to 2 decimal places (about 1 km) and sent over HTTPS to Open-Meteo (open-meteo.com)
+to get the forecast. When you search for a city by name, that name is sent to Open-Meteo's place search. We
+don't store your location on any server. This permission is optional: you can pick a city by hand.</p>
+
+<h3>Theme store</h3>
+<p>When you open the theme store or download a theme, the app fetches the list and the theme packs from our
+server. The requests carry no personal information. Like any web server, it may log the IP address, time and
+file requested, only to prevent abuse, and keeps these logs for no more than 30 days.</p>
+
+<h3>Gold prices, fuel prices, lottery results</h3>
+<p>These widgets load public pages from webgia.com and xskt.com.vn. The app sends no personal information.
+Those sites only see an IP address, as with any web visit.</p>
+
+<h2>Data read on your phone only, never sent</h2>
+<ul>
+  <li><b>Calendar</b> (if you allow it): upcoming events, shown on the calendar widgets.</li>
+  <li><b>Step count</b> (Health Connect and physical activity permission, if you allow them): shown on the
+    step widgets, including while the app is closed.</li>
+  <li><b>Music playing</b> (if you turn on notification access): the app only watches media sessions (track
+    title, cover, playing or paused) to show and control music on the widget. It does not read notification
+    content.</li>
+  <li><b>Photos you pick</b>: photos chosen in the system photo picker are copied into the app's private
+    storage, only to be used as widget backgrounds.</li>
+  <li><b>Wallpaper</b>: when you ask, the app sets a photo as your wallpaper. If you allow file access
+    (optional), the app reads the current wallpaper only to draw the widgets' glass effect.</li>
+  <li><b>Battery, date and time, lunar calendar</b>: computed on the phone.</li>
+  <li><b>What you type</b> (notes, names, countdown dates, QR code content): stored on the phone.</li>
+</ul>
+
+<h2>Health Connect</h2>
+<p>The app only reads step counts from Health Connect and writes nothing to it. This data is used only to show
+on your widgets. It is not sent anywhere, not used for advertising, and not shared with anyone. Use of
+information received from Health Connect will adhere to the Health Connect Permissions policy, including the
+Limited Use requirements.</p>
+
+<h2>Retention and deletion</h2>
+<p>Your data is kept in the app's private storage on your phone. Downloaded theme packs are encrypted on the
+phone. You can delete everything by clearing the app's data in Settings, or by uninstalling the app. You can
+revoke any permission at any time in Android Settings.</p>
+
+<h2>Security</h2>
+<p>The app connects over HTTPS. The theme list is digitally signed, and the app rejects a list that has been
+altered.</p>
+
+<h2>Children</h2>
+<p>The app is not directed to children under 13 and does not knowingly collect children's data.</p>
+
+<h2>Changes</h2>
+<p>If the app starts to use data in a new way (for example ads or in-app purchases), this page will be updated
+first, with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Email: <a href="mailto:support@gnavigation.men">support@gnavigation.men</a></p>
+</section>
+</main>
+</body>
+</html>

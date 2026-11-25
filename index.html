@@ -26,18 +26,27 @@
 
 <section id="vi" lang="vi">
 <h1>Chính sách quyền riêng tư của AI Widget</h1>
-<p class="meta">Ứng dụng: AI Widget (com.widget.gnavi) trên Google Play · Có hiệu lực từ 25/11/2026</p>
+<p class="meta">Ứng dụng: AI Widget (com.widget.gnavi) trên Google Play · Có hiệu lực từ 26/11/2026</p>
 
 <p>AI Widget là ứng dụng widget cho màn hình chính. Ứng dụng không có tài khoản, không có quảng cáo,
 không dùng công cụ phân tích hay theo dõi, và không bán dữ liệu của bạn. Hầu hết dữ liệu chỉ nằm trên điện
 thoại của bạn. Trang này nói rõ ứng dụng đọc gì, gửi gì ra ngoài, và vì sao.</p>
 
 <h2>Dữ liệu được gửi ra khỏi điện thoại</h2>
-<h3>Vị trí gần đúng (cho thời tiết)</h3>
-<p>Khi bạn dùng widget thời tiết với vị trí hiện tại, ứng dụng xin quyền vị trí gần đúng. Toạ độ được làm
-tròn đến 2 chữ số thập phân (khoảng 1 km) rồi gửi qua HTTPS tới Open-Meteo (open-meteo.com) để lấy dự
-báo. Khi bạn tìm thành phố theo tên, tên đó được gửi tới dịch vụ tìm địa điểm của Open-Meteo. Chúng tôi
-không lưu vị trí của bạn trên máy chủ nào. Quyền này là tuỳ chọn: bạn có thể chọn thành phố bằng tay.</p>
+<h3>Vị trí (cho thời tiết)</h3>
+<p>Khi bạn dùng widget thời tiết với vị trí hiện tại, ứng dụng xin quyền vị trí. Bạn chọn «Chính xác» hoặc
+«Gần đúng» trong hộp thoại của Android. Vị trí chỉ được đọc khi ứng dụng đang mở, không đọc khi chạy nền.</p>
+<ul>
+  <li><b>Tên nơi bạn ở</b>: toạ độ được đổi thành tên phường/xã (hoặc tên đường, nếu không có phường) và quận/thành phố bằng dịch vụ địa chỉ có sẵn
+    trên điện thoại (trên phần lớn máy Android là dịch vụ của Google Play, có thể gửi toạ độ tới Google để tra
+    tên). Nếu dịch vụ đó không biết tên phường, ứng dụng gửi một điểm đã làm tròn khoảng 100 m (khoảng 1 km
+    với vị trí gần đúng) qua HTTPS tới dịch vụ Nominatim của OpenStreetMap (nominatim.openstreetmap.org) để tra
+    tên. Tên đó và toạ độ được lưu trên máy để widget dùng tiếp, không gửi đi đâu khác.</li>
+  <li><b>Dự báo</b>: toạ độ được làm tròn theo lưới khoảng 2 km rồi mới gửi qua HTTPS tới Open-Meteo
+    (open-meteo.com). Vị trí chính xác không bao giờ được gửi tới Open-Meteo.</li>
+  <li>Khi bạn tìm thành phố theo tên, tên đó được gửi tới dịch vụ tìm địa điểm của Open-Meteo.</li>
+</ul>
+<p>Chúng tôi không lưu vị trí của bạn trên máy chủ nào. Quyền này là tuỳ chọn: bạn có thể chọn thành phố bằng tay.</p>
 
 <h3>Kho theme</h3>
 <p>Khi bạn mở kho theme hoặc tải một mẫu, ứng dụng tải danh sách và gói theme từ máy chủ của chúng tôi. Yêu
@@ -91,18 +100,28 @@ sẽ được cập nhật trước, kèm ngày hiệu lực mới.</p>
 
 <section id="en" lang="en">
 <h1>AI Widget privacy policy</h1>
-<p class="meta">App: AI Widget (com.widget.gnavi) on Google Play · Effective 25 November 2026</p>
+<p class="meta">App: AI Widget (com.widget.gnavi) on Google Play · Effective 26 November 2026</p>
 
 <p>AI Widget is a home screen widget app. It has no accounts, no ads, no analytics or tracking tools, and it
 does not sell your data. Most data stays on your phone. This page explains what the app reads, what it sends,
 and why.</p>
 
 <h2>Data that leaves your phone</h2>
-<h3>Approximate location (for weather)</h3>
-<p>When you use a weather widget with your current location, the app asks for approximate location. The
-coordinates are rounded to 2 decimal places (about 1 km) and sent over HTTPS to Open-Meteo (open-meteo.com)
-to get the forecast. When you search for a city by name, that name is sent to Open-Meteo's place search. We
-don't store your location on any server. This permission is optional: you can pick a city by hand.</p>
+<h3>Location (for weather)</h3>
+<p>When you use a weather widget with your current location, the app asks for location. You choose Precise
+or Approximate in Android's dialog. Location is read only while the app is open, never in the background.</p>
+<ul>
+  <li><b>The name of where you are</b>: the coordinates are turned into the name of your ward (or your street, where there is no ward) and district or city by
+    the phone's own address service (on most Android phones this is Google Play services, which may send the
+    coordinates to Google to look the name up). If that service doesn't know the ward, the app sends a point
+    rounded to about 100 m (about 1 km with approximate location) over HTTPS to OpenStreetMap's Nominatim
+    service (nominatim.openstreetmap.org) to look the name up. The name and the coordinates are kept on the
+    phone for the widgets to use, and are not sent anywhere else.</li>
+  <li><b>The forecast</b>: the coordinates are snapped to a grid of about 2 km before they are sent over HTTPS
+    to Open-Meteo (open-meteo.com). Your precise location is never sent to Open-Meteo.</li>
+  <li>When you search for a city by name, that name is sent to Open-Meteo's place search.</li>
+</ul>
+<p>We don't store your location on any server. This permission is optional: you can pick a city by hand.</p>
 
 <h3>Theme store</h3>
 <p>When you open the theme store or download a theme, the app fetches the list and the theme packs from our
